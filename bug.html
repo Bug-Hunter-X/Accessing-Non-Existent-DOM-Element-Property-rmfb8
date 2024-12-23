@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    //Attempt to access a non-existent property
+    const myVar = document.getElementById('myDiv').nonExistentProperty;
+    console.log(myVar); //This will log 'undefined'
+  </script>
+</body>
+</html>
